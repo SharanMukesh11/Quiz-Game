@@ -1,0 +1,92 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.fulldiv{
+    
+    height:1vh;
+    width: 100.9%;
+   
+    position: relative;
+    top:-650px;
+    /* z-index: 0; */
+
+}
+.leftdiv{
+    position: absolute;
+    top: 0px;
+    left:-700px;
+    background-color:rgb(41, 51, 138);
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    box-shadow: inset 0px 0px 55px 10px rgb(0, 217, 255);
+    animation: leftani 10s  1s ;
+    
+}
+.rightdiv{
+    
+   
+    position: absolute;
+    top: 0px;
+    right:-700px;
+    z-index: 2;
+    background-color:rgb(41, 51, 138);
+    height: 100vh;
+    box-shadow: inset 0px 0px 55px 10px rgb(0, 217, 255);
+    animation: rightani 10s  1s ;
+
+    
+}
+.leftimg{
+    
+    height: 100vh;
+}
+.rightimg{
+
+    height: 100vh;
+}
+/* .fulldiv:hover .rightdiv{
+    transition-duration: 5s;
+    transform: translateX(700px);
+    
+}
+.fulldiv:hover .leftdiv{
+    transition-duration: 5s;
+    transform: translateX(-700px);
+} */
+
+@keyframes leftani {
+    0%{
+        left:0px;
+        opacity: 0;
+    }
+    10%{
+        left:0px;
+        opacity: 1;
+    }
+    100%{
+       left:-700px;
+       overflow: hidden;
+    }
+    
+}
+@keyframes rightani {
+    0%{
+        right:0px;
+        opacity: 0;
+    }
+    10%{
+        right:0px;
+        opacity: 1;
+    }
+    100%{
+        right: -700px;
+        overflow: hidden;
+        
+    }
+    
+}

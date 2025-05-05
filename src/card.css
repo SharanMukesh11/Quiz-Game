@@ -1,0 +1,199 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box ;
+}
+.overall{
+    background-color: rgb(41, 51, 138);
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;  
+    animation: fullani 10s 1ms;
+}
+@keyframes fullani{
+    0%{
+        scale: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+.left{
+    height: 100vh;
+   box-shadow: inset 3px 20px 55px 5px blue;
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+.squarediv{
+    padding: 20px;
+    margin-top: 20px !important;
+    margin-left: 20px;
+    color: white;
+}
+.square{
+    box-shadow: inset  0px 0px 5px 2px rgb(9, 255, 0);
+    
+    height:20px;
+    width: 20px;
+    background-color: blue;
+    color: white;
+    border: 3px solid white;
+    rotate: 0deg;
+    
+}
+.leftbtn{
+    
+    margin-left: 13px;
+    margin-bottom: 10px;
+    rotate: 50deg;
+    border: 0px;
+    background-color: transparent;
+}
+.right{
+    padding: 5px;
+    height:100vh;
+    box-shadow: inset 0px 0px 55px 10px blue;
+    position: relative;
+}
+.nav1{
+    margin-top:15px !important;
+    margin-left:15px !important;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    text-shadow:  5px 5px 5px blue;
+
+}
+.nav2{
+
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+
+}
+.option{
+    box-shadow: inset 0px 0px 15px 3px blue;
+    border:3px solid white;
+    border-radius: 50%;
+    width: 70px;
+    color: white;
+    height:70px;
+    font-size: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.loader{
+    color: white;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.font{
+    
+    height: 300px !important;
+    width: 300px !important;
+    font-size: xx-large;
+}
+.question{
+
+    height:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+.question1{
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+
+}
+.qus1{
+    box-shadow: inset 0px 5px 55px 5px blue;
+
+    color: white;
+    height:110px;
+    border: 3px solid white;
+    border-radius: 400px 400px 400px 400px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qus2{
+    box-shadow: inset 0px 1px 15px 5px blue;
+    color: white;
+    background-color: rgb(41, 51, 138);
+    height:40px;
+    width: 300px !important;
+    border: 3px solid white;
+    border-radius: 400px 400px 400px 400px ;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qus2:hover{
+    color: rgb(153, 255, 0);
+    scale: 1.2;
+    
+    
+}
+.nextdiv{
+    display: flex;
+    align-items: end ;
+    justify-content: end ;
+    background-color: aqua;
+    
+}
+.next{  
+    font-size: 50px;
+    color: white;
+}
+.correct{
+    scale: 1.2;
+    box-shadow: 0px 1px 15px 5px rgb(43, 255, 0);
+    
+
+}
+.corbtn{
+    scale: 1.1;
+    box-shadow:  0px 0px 15px 8px rgb(43, 255, 0);
+    
+
+}
+.wrong{
+    scale: 1.2;
+    box-shadow:  0px 1px 15px 5px rgb(255, 0, 0);
+    
+
+}
+.btn1{
+    padding: 5px;
+    border-radius: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    color: white;
+    box-shadow: inset 0px 1px 15px 2px rgb(9, 255, 0);
+    background-color: rgb(41, 51, 138);
+    width: 100px !important;
+    position: absolute;
+    right: 100px;
+}
+.btn1:hover{
+    scale: 1.3;
+}
